@@ -1,0 +1,27 @@
+@mixin letras(){
+  color:white;
+
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+@mixin titulo(){
+  text-align: center;
+  font-size: 70px
+}
+
+@mixin subtitulo(){
+  font-size: 50px;
+}
+@mixin cuadrado(){
+    max-width: 350px;
+    max-height: 350px;
+    min-width: 350px;
+    min-height: 350px;
+}
+
+@mixin seccionHabilidades(){
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

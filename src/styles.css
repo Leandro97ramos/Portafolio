@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Italic.ttf")
+}
+*{
+box-sizing:border-box;
+}
+
+html{
+  font-family: "lato", black, Italic;
+  background-size: 100%;
+  background-image: url('assets/fondo.jpg') ;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+}

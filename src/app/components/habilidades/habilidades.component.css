@@ -1,0 +1,76 @@
+* {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+input {
+  text-align: center;
+  padding: 0px;
+  background-color: transparent;
+  border: none;
+  width: 70%;
+  border-bottom: 2px solid white;
+}
+
+button {
+  color: black;
+}
+
+span {
+  padding-right: 5px;
+}
+
+.seccion-habilidades {
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.seccion-habilidades h2 {
+  font-size: 50px;
+}
+
+.seccion-habilidades img {
+  max-width: 200px;
+}
+
+.seccion-habilidades .habilidades-lenguajes {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-habilidades .habilidades-frameworks {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+}
+
+.seccion-habilidades .habilidades-metodologias {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-habilidades .contenido ul {
+  list-style: none;
+}

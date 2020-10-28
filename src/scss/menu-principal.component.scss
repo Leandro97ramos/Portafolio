@@ -1,0 +1,44 @@
+@import 'var';
+@import 'mixins';
+*{
+  @include letras;
+}
+
+.contenedor-menu{
+  .lista{
+    padding-top: 110px;
+    padding-bottom: 80px;
+
+        ul{
+          display: flex;
+          flex-direction: row;
+          padding: 0px 40%
+
+        }
+        li{
+          list-style:none;
+          margin-bottom: 10px;
+        }
+        .prim{
+          justify-content: space-around;
+
+        }
+        .logo{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          img{
+            cursor:pointer;
+          }
+        }
+        .seg{
+          justify-content: space-between;
+
+        }
+        img{
+          max-width: 70px;
+        }
+  }
+
+
+}

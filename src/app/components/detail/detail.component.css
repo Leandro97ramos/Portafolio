@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+
+.container .contenedor-Proyecto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container .contenedor-Proyecto img {
+  margin-right: 10%;
+  width: 100%;
+  max-width: 300px;
+  max-height: 250px;
+}
+
+.container .contenedor-Proyecto .infoProyecto {
+  width: 70%;
+  padding: 25px;
+  padding-left: 15px;
+}
+
+.container .contenedor-Proyecto .infoProyecto h3, .container .contenedor-Proyecto .infoProyecto h4 {
+  margin-bottom: 10%;
+  padding: 4px;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+}
+
+.container .contenedor-Proyecto .infoProyecto h3 {
+  font-size: 25px;
+}
+
+.container .contenedor-Proyecto .infoProyecto h4 {
+  font-size: 25px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.container .contenedor-Proyecto .infoProyecto p {
+  width: 100%;
+}
+
+.container .contenedor-Proyecto .infoProyecto .button-edit, .container .contenedor-Proyecto .infoProyecto .button-delete {
+  color: white;
+  max-width: 250px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 35px;
+  padding: 18px 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  margin-right: 23px;
+}
+
+.container .contenedor-Proyecto .infoProyecto .button-edit {
+  background: #f1c40f;
+}
+
+.container .contenedor-Proyecto .infoProyecto .button-delete {
+  background: #f80000;
+}

@@ -1,0 +1,60 @@
+<div class="contenedor-trabajos" *ngIf="project">
+    <h1>{{title}}</h1>
+    <div class="message succes" *ngIf="status == 'sucess'">
+      <p class="letras">
+        El proyecto se ha creado correctamente, verlo aqui <a [routerLink]="['/proyecto', this.save_project._id]">verlo aqui</a>
+      </p>
+    </div>
+
+    <div class="message failed" *ngIf="status == 'failed'">
+      El proyecto no se ha podido crear
+
+    </div>
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+        <p>
+            <input  type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+            <label  for="name">Nombre</label> <br>
+            <span *ngIf=" name.touched && !name.valid"><img src="../../assets/novalid.png" alt=""> </span>
+            <span *ngIf=" name.touched && name.valid"><img src="../../assets/valid.png" alt=""> </span>
+
+        </p>
+        <p>
+            <textarea type="text" name="description" #description="ngModel" [(ngModel)]="project.description" required> </textarea>
+
+            <label  class="tarea" for="description">descripcion</label> <br>
+            <span *ngIf=" description.touched && !description.valid"><img src="../../assets/novalid.png" alt=""></span>
+            <span *ngIf=" description.touched && description.valid"><img src="../../assets/valid.png" alt=""></span>
+        </p>
+        <p>
+            <input type="text" name="category" #category="ngModel" [(ngModel)]="project.category" required >
+
+            <label   for="category">Categoria</label> <br>
+            <span *ngIf=" category.touched && !category.valid"><img src="../../assets/novalid.png" alt=""></span>
+            <span *ngIf=" category.touched && category.valid"><img src="../../assets/valid.png" alt=""></span>
+        </p>
+        <p>
+            <input type="text" name="year" #year="ngModel" [(ngModel)]="project.year">
+            <label  for="year">Año</label> <br>
+        </p>
+        <p>
+            <input type="text" name="langs" #langs="ngModel" [(ngModel)]="project.langs" required>
+
+            <label  for="langs" >lenguajes</label> <br>
+            <span *ngIf=" langs.touched && !langs.valid"><img src="../../assets/novalid.png" alt=""></span>
+            <span *ngIf=" langs.touched && langs.valid"><img src="../../assets/valid.png" alt=""></span>
+        </p>
+
+        <p>
+          <label for="image">Imagen del proyecto</label>
+            <span class="image" *ngIf="project.image" style="float:none;">
+              <img src="{{url+'get-image/'+project.image}}" style="width:100px;"/>
+            </span><br/>
+          <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)"/>
+        </p>
+        <p>
+          <input type="submit" class="botonEnviar"  value="Enviar" [disabled]="!projectForm.form.valid" >
+        </p>
+    </form>
+
+
+</div>

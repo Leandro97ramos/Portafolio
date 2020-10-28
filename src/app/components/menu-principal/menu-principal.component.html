@@ -1,0 +1,29 @@
+<div class="contenedor-menu">
+  <div class="lista">
+
+          <ul class="prim">
+            <li ><a [routerLink]="['/curriculum']"> <img src="../assets/curriculum-vitae.png" class="img-cv" > </a></li>
+            <li class="lista-atrasU" >
+
+                <a *ngIf="interruptor==true" [routerLink]="['/habilidades']"> <img src="../assets/habilidades.png" class="img-habilidad" ></a>
+                <a *ngIf="interruptor==false" [routerLink]="['backend/habilidadesB']"> <img src="../assets/habilidades.png" class="img-habilidad" ></a>
+
+            </li>
+
+          </ul>
+          <div class="logo">
+
+              <a *ngIf="interruptor==true" (click)="setInterruptor(false)" [routerLink]="['/backend']"><img  id="logo" src="../assets/fotoCurriculum.jpg" alt=""></a>
+              <a *ngIf="interruptor==false" (click)="setInterruptor(true)" [routerLink]="['/']"><img  id="logo" src="../assets/fotoCurriculum.jpg" alt=""></a>
+
+          </div>
+          <ul class="seg">
+            <li>
+              <a *ngIf="interruptor==true" [routerLink]="['/proyectos']"> <img src="../assets/proyectos.png" class="img-proyecto" ></a>
+              <a *ngIf="interruptor==false" [routerLink]="['backend/habilidadesB']"> <img src="../assets/proyectos.png" class="img-proyecto" ></a>
+            </li>
+            <li class="lista-atrasD" ><a [routerLink]="['/contacto']"> <img src="../assets/contact.png" class="img-contact"></a></li>
+          </ul>
+
+  </div>
+</div>

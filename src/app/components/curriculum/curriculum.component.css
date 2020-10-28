@@ -1,0 +1,67 @@
+* {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.info-curriculum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 35%;
+}
+
+.info-curriculum .costado-curriculum {
+  background: #f1c40f;
+  height: 100%;
+  padding: 65px 35px;
+}
+
+.info-curriculum .costado-curriculum img {
+  padding: 0px;
+  border-radius: 100px;
+}
+
+.info-curriculum .info-costado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.info-curriculum .resto-curriculum {
+  padding: 25px 35px;
+  background: #34495E;
+}
+
+.info-curriculum .resto-curriculum h1 {
+  font-size: 65px;
+}
+
+.info-curriculum .resto-curriculum ul {
+  text-align: left;
+  list-style: none;
+}
+
+.info-curriculum .resto-curriculum ul .linea-contorno {
+  padding-left: 15px;
+}
+
+.info-curriculum .resto-curriculum ul li {
+  font-size: 25px;
+}
+
+.info-curriculum .resto-curriculum ul li strong {
+  font-size: 55px;
+}

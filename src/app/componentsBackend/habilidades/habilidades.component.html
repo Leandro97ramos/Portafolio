@@ -1,0 +1,17 @@
+
+  <app-habilidades *ngIf="flag==true"></app-habilidades>
+  <ng-template appHabilidades ></ng-template>
+  <div class="seccion-input">
+      <p class="contenedor-input">
+        <input class="lenguaje" type="text" #Inplenguaje="ngModel"  [(ngModel)]="lengs.lenguaje"><button (click)="SubmitLenguaje(lengs.lenguaje)"  type="button" class="btnEnviar" name="enviarL">Agregar</button><button type="button" (click)="EditarLenguajes()"   name="enviar">Editar</button>
+      </p>
+
+
+      <p class="contenedor-framework">
+        <input class="framework" type="text" #Inpframework="ngModel" [(ngModel)]="frame.framework"><button (click)="SubmitFramework(frame.framework)" type="button" class="btnEnviar" name="enviarF">Agregar</button><button (click)="EditarFramework()" type="button"  name="enviar">Editar</button>
+      </p>
+
+      <p class="contenedor-input">
+        <input class="metodologia" type="text" #Inpmetodologia="ngModel" [(ngModel)]="metod.metodologia"><button (click)="SubmitMetodologia(metod.metodologia)" type="button" class="btnEnviar" name="enviarM">Agregar</button><button (click)="SubmitMetodologia(metod.metodologia)" type="button"  name="enviar">Editar</button>
+      </p>
+  </div>

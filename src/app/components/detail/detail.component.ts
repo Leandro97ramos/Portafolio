@@ -1,0 +1,67 @@
+import { Component, OnInit } from '@angular/core';
+import {Project} from '../../models/project';
+import {ProjectService} from '../../services/project.service';
+import {Global} from '../../services/global';
+import { Router, ActivatedRoute, Params} from '@angular/router';
+@Component({
+  selector: 'app-detail',
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.css'],
+  providers: [ProjectService]
+})
+export class DetailComponent implements OnInit {
+  public url: string;
+  public project: Project;
+  public confirm: boolean;
+  public confirmBorrado: boolean;
+  constructor(
+    private _projectService: ProjectService,
+    private _route: ActivatedRoute,
+    private _router: Router
+  ) {
+
+      this.url = Global.url;
+      this.confirm = false;
+
+   }
+
+  ngOnInit(): void {
+      this._route.params.subscribe(params => {
+        let id = params.id;
+
+        this.getProject(id);
+      })
+  }
+
+  getProject(id){
+
+    this._projectService.getProject(id).subscribe(
+        response => {
+            this.project = response.project;
+        },
+        error =>{
+            console.log(<any>error);
+        }
+
+    )
+  }
+  setConfirm(confirm){
+    console.log(confirm);
+    this.confirm = confirm ;
+  }
+
+
+  deleteProject(id){
+
+      this._projectService.deleteProject(id).subscribe(
+          response => {
+            if(this.project){
+              this._router.navigate(['/proyectos'])
+            }
+          },
+          error =>{
+            console.log(<any>error)
+          }
+      );
+  }
+}

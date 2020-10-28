@@ -1,0 +1,67 @@
+<div class="contenedor-habilidades">
+<h1>Habilidades</h1>
+<div class="seccion-habilidades">
+  <div class="habilidades-lenguajes">
+    <img src="../assets/lenguajes.png" alt="">
+    <h2>lenguajes</h2>
+      <div class="contenido">
+        <ul>
+          <li *ngFor=" let leng of lenguajes ">
+            <span   *ngIf="editarL== false " >
+              {{leng.lenguaje}}
+            </span>
+
+
+            <input *ngIf="editarL== true" #lenguaje="ngModel" [(ngModel)]="leng.lenguaje">
+            <button type="button" name="editar" *ngIf="editarL== true"  (click)="updateLenguaje(leng)">Editar</button>
+            <button type="button" name="editar" *ngIf="editarL== true"  (click)="deleteLenguaje(leng._id, leng.lenguaje)">Eliminar</button>
+
+          </li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="habilidades-frameworks">
+    <img src="../assets/framework.png" alt="">
+    <h2>frameworks</h2>
+      <div class="contenido">
+        <ul>
+          <ng-template id="">
+
+          </ng-template>
+          <li *ngFor=" let frame of frameworks">
+            <span>
+              {{frame.framework}}
+            </span>
+
+                <input *ngIf="editarL== true" #lenguaje="ngModel" [(ngModel)]="leng.lenguaje">
+                <button type="button" name="editar" *ngIf="editarF == true"  (click)="updateLenguaje(leng)">Editar</button>
+                <button type="button" name="editar" *ngIf="editarF == true"  (click)="deleteLenguaje(leng._id, leng.lenguaje)">Eliminar</button>
+
+          </li>
+        </ul>
+
+
+      </div>
+  </div>
+
+  <div class="habilidades-metodologias">
+    <img src="../assets/agile.png" alt="">
+    <h2>metodologias</h2>
+      <div class="contenido">
+        <ul>
+          <li *ngFor=" let metod of metodologias">
+            <span>
+              {{metod.metodologia}}
+            </span>
+          </li>
+        </ul>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+</div>

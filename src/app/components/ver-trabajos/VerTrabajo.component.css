@@ -1,0 +1,154 @@
+.container {
+  width: 100%;
+}
+
+.container h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 70px;
+}
+
+.container .date {
+  float: left;
+  font-size: 12px;
+  border-radius: 0 0 40px 40px;
+}
+
+.container .contenedor-proyectos {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.container .contenedor-proyectos ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container .contenedor-proyectos li {
+  float: left;
+  padding: 1.7rem;
+  width: 50%;
+  display: inline-block;
+}
+
+.container .contenedor-proyectos li .nombre-proyecto {
+  font-size: 12px;
+  padding: 9px 0;
+  width: 95%;
+}
+
+.container .contenedor-proyectos li .nombre-proyecto a {
+  text-decoration: none;
+  border: #D3D3D3 1px solid;
+  background: rgba(211, 211, 211, 0.5);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.container .contenedor-proyectos li .nombre-proyecto, .container .contenedor-proyectos li h1, .container .contenedor-proyectos li p, .container .contenedor-proyectos li a {
+  color: gray;
+}
+
+.container .contenedor-proyectos li h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.container .contenedor-proyectos li p {
+  height: 70px;
+  margin: 0;
+  text-align: center;
+}
+
+.container .contenedor-proyectos li .date {
+  position: absolute;
+  width: 5%;
+  top: 0%;
+  left: 6%;
+  background-color: #77d7b9;
+  color: white;
+  padding: 2.8em;
+}
+
+.container .contenedor-proyectos li .date span {
+  padding-top: 15px;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+
+.container .contenedor-proyectos li span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.container .contenedor-proyectos li .data {
+  color: white;
+  -webkit-transform: translateY(calc(70px + 4em));
+  transform: translateY(calc(70px + 4em));
+}
+
+.container .contenedor-proyectos li .content {
+  background-color: white;
+  -webkit-box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .contenedor-proyectos li .wrapper {
+  background-color: white;
+  max-width: 350px;
+  max-height: 350px;
+  min-width: 350px;
+  min-height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .contenedor-proyectos li .wrapper:hover .data {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.container .contenedor-proyectos li .data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-transform: translateY(calc(70px + 1em));
+  transform: translateY(calc(70px + 1em));
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.container .contenedor-proyectos li .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.container .contenedor-proyectos li img {
+  width: 100%;
+  min-height: 540px;
+}

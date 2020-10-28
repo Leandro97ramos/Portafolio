@@ -1,0 +1,110 @@
+* {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+form {
+  padding: 0px 200px;
+}
+
+.contenedor-trabajos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contenedor-trabajos h1 {
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.contenedor-trabajos p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: .8rem;
+}
+
+.contenedor-trabajos input[type="submit"] {
+  border-radius: 35px;
+  padding: 18px 15%;
+  background: #f1c40f;
+}
+
+.contenedor-trabajos input[disabled] {
+  background: #c29d0b;
+  color: white;
+}
+
+.contenedor-trabajos input[type="text"], .contenedor-trabajos textarea {
+  position: static;
+  text-align: center;
+  width: 50%;
+  background: #efefef;
+  padding: 15px 0px;
+  color: black;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.contenedor-trabajos input[type="text"] .tarea, .contenedor-trabajos textarea .tarea {
+  bottom: 55px;
+}
+
+.contenedor-trabajos input[type="text"] .imagen, .contenedor-trabajos textarea .imagen {
+  top: 0px;
+  color: white;
+}
+
+.contenedor-trabajos span {
+  padding-left: 5px;
+}
+
+.contenedor-trabajos span img {
+  width: 25px;
+}
+
+label {
+  color: #f1c40f;
+}
+
+.message {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.message p {
+  background: #800080;
+  border-radius: 18px;
+  background: #800080;
+  border-radius: 18px;
+  padding: 19px;
+  -webkit-box-shadow: inset -1px 2px 32px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px 2px 32px 0px rgba(0, 0, 0, 0.75);
+}
+
+.message a {
+  color: #f1c40f;
+}

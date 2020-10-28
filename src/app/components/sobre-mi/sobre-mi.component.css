@@ -1,0 +1,33 @@
+* {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.contenedor-sobreMi {
+  margin: 0 500px;
+}
+
+.contenedor-sobreMi h2 {
+  font-size: 55px;
+  text-decoration: underline;
+}
+
+.contenedor-sobreMi h3 {
+  font-size: 25px;
+}
+
+.contenedor-sobreMi h4 {
+  font-size: 25px;
+}
+
+.contenedor-sobreMi p {
+  color: white;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.contenedor-sobreMi .about {
+  padding: 10px 18px 15px 18px;
+  border: 2px solid white;
+}

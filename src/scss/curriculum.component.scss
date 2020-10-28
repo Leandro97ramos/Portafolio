@@ -1,0 +1,51 @@
+@import 'var';
+@import 'mixins';
+* {
+  @include letras;
+}
+
+h1{
+  @include titulo;
+}
+.info-curriculum{
+        display: flex;
+
+        padding-left: 35%;
+  .costado-curriculum{
+        background: #f1c40f;
+        height: 100%;
+        padding: 65px 35px;
+    img{
+        padding: 0px;
+        border-radius: 100px;
+    }
+  }
+
+  .info-costado{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  }
+  .resto-curriculum{
+      padding: 25px 35px;
+      background: #34495E;
+      h1{
+        font-size: 65px;
+      }
+
+      ul {
+        text-align: left;
+        list-style: none;
+        .linea-contorno{
+          padding-left: 15px;
+        }
+        li {
+              font-size: 25px;
+              strong{
+                font-size: 55px;
+              }
+
+          }
+      }
+  }
+}
